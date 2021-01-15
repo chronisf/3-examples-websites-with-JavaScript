@@ -1,0 +1,47 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    
+ <meta charset="UTF-8">
+<title>page2</title> 
+    
+    <style>
+            div {
+        width:200px;
+        height:200px;
+        background-color:red;
+        color:blue;
+                text-align: right;
+            }
+            #p1{padding:80px;}
+        </style>
+
+</head>
+
+<body>
+<button onclick="f1(20,10)">Click here</button>   
+<p id="p1"></p>    
+<script>
+function f1(a, b) {
+    var z=2*a+3*b; 
+    document.getElementById("p1").innerHTML = z;
+}
+</script>
+    
+
+<div onmouseover="f2()" >
+    <p id="p1"></p>    
+    </div>   
+
+<script>
+function f2() {
+  
+    document.getElementById("p1").innerHTML ="Βρίσκεστε στην κοκκινη περιοχή ";
+}
+    
+
+</script>
+ 
+    
+</body>
+</html>

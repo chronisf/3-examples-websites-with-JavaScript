@@ -1,0 +1,60 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    
+ <meta charset="UTF-8">
+<title>page2</title> 
+    
+    <style>
+            div {
+        width:200px;
+        height:200px;
+        background-color:red;
+        color:blue;
+                text-align: right;
+            }
+            #p1{padding:80px;}
+        </style>
+    
+    <script>    
+        
+function car(price,topspeed,acceleration,consumption) {
+this.price=price;
+this.topspeed=topspeed;
+this.acceleration=acceleration;
+this.consumption=consumption;
+this.ShowLaptop=ShowLaptop;
+}        
+        
+function ShowLaptop() {
+document.write("price:"+this.price+"<br>");    
+document.write("topspeed:"+this.topspeed+"<br>");
+document.write("acceleration"+this.acceleration+"<br>");
+document.write("consumption:"+this.consumption+"<hr>");
+}
+</script>
+
+</head>
+
+<body>
+    
+    
+    <script>
+car1=new car("3000$","170km","100km/h","7lt/50000km");
+car2=new car("4000$","180km","110km/h","7lt/650000km");
+car3=new car("5000$","190km","120km/h","7lt/75000km");
+car4=new car("6000$","200km","140km/h","7lt/90000km");
+car5=new car("10000$","250km","180km/h","7lt/150000km");
+        
+        
+car1.ShowLaptop();
+car2.ShowLaptop();
+car3.ShowLaptop();
+car4.ShowLaptop();
+car5.ShowLaptop();
+    </script>
+
+ 
+    
+</body>
+</html>
